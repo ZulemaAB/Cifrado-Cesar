@@ -1,19 +1,20 @@
 // Primero creamos un string asignandole el nombre de abecedario->'alphabet'
 
-var alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+  var alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 // transformaremos el string en un array.
-var letter = alphabet.split('');
-var newLetter = '';
+  var letter = alphabet.split('');
+  var newLetter = '';
 
 // se creara  una nueva variable "word" donde se ingresara la frase o palabra.
-do {
-  var word=prompt('Ingrese frase');
-}while(word.length===0 || !isNaN(word))
-for(var i=0;i<word.length;i++){
+  do {
+    var word=prompt('Ingrese texto');
+  }while(word.length===0 || !isNaN(word))
+    for(var i=0;i<word.length;i++){
+
 //word[i]- es el elemento de la posicion i
 //charAt(i).- es para sacar un carecter de la palabra ingresada.
 
-num=(word.charAt(i)).charCodeAt();
+  num=(word.charAt(i)).charCodeAt();
 
   position = letter.indexOf(word.charAt(i));
   newposition=(position+num)%26;
@@ -24,5 +25,7 @@ num=(word.charAt(i)).charCodeAt();
   document.write(newLetter);
   //document.write(letter) ;
   function cipher(letter){
- }
-  function decipher(num){}
+  }
+  function decipher(num){
+
+  }
